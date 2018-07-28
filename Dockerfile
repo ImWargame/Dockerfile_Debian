@@ -7,6 +7,6 @@ RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
 RUN git config --global user.email "yoanndelattre21@gmail.com"
 RUN git config --global user.name "ImWargame"
 VOLUME ["/mnt"]
-EXPOSE 80 443 6006
+EXPOSE 80 443
 WORKDIR  /mnt
 ENTRYPOINT apt-get update && apt-get upgrade -y && /bin/bash
