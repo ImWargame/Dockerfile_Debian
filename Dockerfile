@@ -5,3 +5,4 @@ RUN apt-get update && apt-get upgrade -y && apt-get -y clean && rm -rf /var/lib/
 
 ENV TZ Europe/Paris
 RUN cp /usr/share/zoneinfo/Europe/Paris /etc/localtime
+#
