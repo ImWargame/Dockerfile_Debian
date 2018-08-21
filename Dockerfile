@@ -1,4 +1,6 @@
-FROM debian
+FROM scratch
+ADD rootfs.tar.xz /
+
 MAINTAINER Yoann Delattre "github.com/yoanndelattre | twitter.com/yoanndelattre_"
 
 RUN apt-get update && apt-get upgrade -y && apt-get -y clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
