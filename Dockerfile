@@ -1,5 +1,4 @@
-FROM scratch
-ADD rootfs.tar.xz /
+FROM debian
 
 MAINTAINER Yoann Delattre "github.com/yoanndelattre | twitter.com/yoanndelattre_"
 
